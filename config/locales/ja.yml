@@ -1,0 +1,4 @@
+ja:
+  field_username: ユーザー名
+  field_realm: 認証領域
+  field_enabled_digest_auth: Digest認証を有効にする

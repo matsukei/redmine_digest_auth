@@ -1,0 +1,17 @@
+<p>
+  <label><%= l(:field_enabled_digest_auth) %>:</label>
+  <%= hidden_field_tag('settings[enabled_digest_auth]', 0) %>
+  <%= check_box_tag 'settings[enabled_digest_auth]', 1, !@settings[:enabled_digest_auth].to_i.zero? %>
+</p>
+<p>
+  <label><%= l(:field_realm) %>:<span class="required">*</span></label>
+  <%= text_field_tag 'settings[realm]', @settings[:realm], :required => true, :size => 30 %>
+</p>
+<p>
+  <label><%= l(:field_username) %>:<span class="required">*</span></label>
+  <%= text_field_tag 'settings[username]', @settings[:username], :required => true, :size => 30 %>
+</p>
+<p>
+  <label><%= l(:field_password) %>:<span class="required">*</span></label>
+  <%= password_field_tag 'settings[password]', Redmine::Ciphering.decrypt_text(@settings[:password]), :required => true, :size => 30 %>
+</p>

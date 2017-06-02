@@ -1,0 +1,4 @@
+en:
+  field_username: username
+  field_realm: realm
+  field_enabled_digest_auth: Enable Digest Authentication
