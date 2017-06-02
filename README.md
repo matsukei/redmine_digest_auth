@@ -1,5 +1,7 @@
 # Redmine digest auth plugin
 
+[![Build Status](https://travis-ci.org/matsukei/redmine_digest_auth.svg?branch=master)](https://travis-ci.org/matsukei/redmine_digest_auth)
+
 It is a plugin that provides digest authentication to Redmine.
 
 ## Usage

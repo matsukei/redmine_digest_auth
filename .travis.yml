@@ -1,9 +1,12 @@
 language: ruby
 
+# http://www.redmine.org/projects/redmine/wiki/RedmineInstall
 rvm:
+  - 1.9.3
+  - 2.0.0
+  - 2.1
   - 2.2
   - 2.3
-  - 2.4
 
 env:
   - REDMINE_REPOS=branches/3.3-stable
