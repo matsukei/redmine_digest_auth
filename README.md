@@ -44,9 +44,9 @@ You can change Digest authentication settings without restarting the web service
 ## Not improved
 
 1. Re-authentication interval: 5 minutes
-  * If you do not operate anything, you will be asked again in [about 5 minutes](https://github.com/rails/rails/blob/master/actionpack/lib/action_controller/metal/http_authentication.rb#L317) after authentication.
+    * If you do not operate anything, you will be asked again in [about 5 minutes](https://github.com/rails/rails/blob/master/actionpack/lib/action_controller/metal/http_authentication.rb#L317) after authentication.
 2. There are exceptions where digest authentication is not required. It is a static file URL directly under the public folder and a URL with no routing definitions.
-  * For implementation via before_action, static files can be referenced.
+    * For implementation via before_action, static files can be referenced.
 
 ## License
 
